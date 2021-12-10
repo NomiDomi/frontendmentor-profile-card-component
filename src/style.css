@@ -6,7 +6,9 @@
     --fw-r: 400;
     --fw-b: 700;
 
-    --fs: 1.8rem;
+    --fs-s: 1rem;
+    --fs-m: 1.4rem;
+    --fs-l: 1.8rem;
 
     --primary-clr: hsl(185, 75%, 39%);
     --primary-clr-dark: hsl(227, 10%, 46%);
@@ -15,3 +17,18 @@
 
     --mw-desktop: 1440px;
 }
+
+*, 
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 10px;
+    font-family: var(--ff);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-clr);
+}
+

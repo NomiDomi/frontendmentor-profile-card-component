@@ -10,10 +10,13 @@
     --fs-m: 1.4rem;
     --fs-l: 1.8rem;
 
+    --br: 1.5rem;
+
     --primary-clr: hsl(185, 75%, 39%);
     --primary-clr-dark: hsl(227, 10%, 46%);
     --primary-clr-very-dark: hsl(229, 23%, 23%);
     --neutral-clr: hsl(0, 0%, 59%);
+    --white-clr: #FFF;
 
     --mw-desktop: 1440px;
 }
@@ -30,5 +33,32 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--primary-clr);
+    display: flex;
+    justify-content: center;
 }
 
+main {
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 90vw;
+}
+
+.profile-image {
+    width: 96px;
+    position: absolute;
+    border: 5px solid var(--white-clr);
+    border-radius: 50%;
+
+    left: calc(50% - 96px/2);
+}
+
+.card-image {
+    border-radius: var(--br) var(--br) 0 0;
+}
+
+.card-text {
+    background-color: var(--white-clr);
+    border-radius: 0 0 var(--br) var(--br);
+}

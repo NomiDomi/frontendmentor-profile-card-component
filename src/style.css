@@ -12,10 +12,14 @@
 
     --br: 1.5rem;
 
+    --p-s: 2.4rem;
+    --p-m: 2.8rem;
+
     --primary-clr: hsl(185, 75%, 39%);
     --primary-clr-dark: hsl(227, 10%, 46%);
     --primary-clr-very-dark: hsl(229, 23%, 23%);
     --neutral-clr: hsl(0, 0%, 59%);
+    --neutral-clr-light: hsl(225, 10%, 92%);
     --white-clr: #FFF;
 
     --mw-desktop: 1440px;
@@ -45,6 +49,27 @@ main {
     width: 90vw;
 }
 
+h2, h3 {
+    color: var(--primary-clr-dark);
+    font-weight: var(--fw-r);
+}
+
+h1 {
+    font-size: var(--fs-l);
+    font-weight: var(--fw-b);
+    color: var(--primary-clr-very-dark);
+}
+
+h2 {
+    font-size: var(--fs-m);
+}
+
+h3 {
+    font-size: var(--fs-s);
+    letter-spacing: 0.15rem;
+    margin-top: 1rem;
+}
+
 .profile-image {
     width: 96px;
     position: absolute;
@@ -52,6 +77,7 @@ main {
     border-radius: 50%;
 
     left: calc(50% - 96px/2);
+    top: calc(50% - 96px/2 - 47px);
 }
 
 .card-image {
@@ -61,4 +87,20 @@ main {
 .card-text {
     background-color: var(--white-clr);
     border-radius: 0 0 var(--br) var(--br);
+}
+
+.personal-info {
+    margin-top: calc(96px/2);
+    padding: var(--p-m);
+}
+
+.separator {
+    height: .1rem;
+    background-color: var(--neutral-clr-light);
+}
+
+.profile-info {
+    display: flex;
+    justify-content: space-around;
+    padding: var(--p-s);
 }

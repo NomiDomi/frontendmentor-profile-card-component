@@ -40,6 +40,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top -650px left -700px, bottom -650px right -700px;
 }
 
 h1 {
@@ -115,4 +119,10 @@ h3 {
     display: flex;
     justify-content: space-around;
     padding: var(--p-s);
+}
+
+@media (min-width: 500px) {
+    body {
+        background-position: top -500px left -290px, bottom -600px right -250px;
+    }
 }

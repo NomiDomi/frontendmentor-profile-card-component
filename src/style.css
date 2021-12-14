@@ -46,7 +46,7 @@ body {
     background-position: top -650px left -700px, bottom -650px right -700px;
 }
 
-h1 {
+h1, .column .number {
     font-size: var(--fs-l);
     font-weight: var(--fw-b);
     color: var(--primary-clr-very-dark);

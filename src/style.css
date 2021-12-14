@@ -21,8 +21,6 @@
     --neutral-clr: hsl(0, 0%, 59%);
     --neutral-clr-light: hsl(225, 10%, 92%);
     --white-clr: #FFF;
-
-    --mw-desktop: 1440px;
 }
 
 *, 
@@ -31,6 +29,8 @@ body {
     margin: 0;
     font-size: 10px;
     font-family: var(--ff);
+    color: var(--primary-clr-dark);
+    font-weight: var(--fw-r);
 }
 
 body {
@@ -39,19 +39,7 @@ body {
     background-color: var(--primary-clr);
     display: flex;
     justify-content: center;
-}
-
-main {
-    display: flex;    
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    width: 90vw;
-}
-
-h2, h3 {
-    color: var(--primary-clr-dark);
-    font-weight: var(--fw-r);
+    align-items: center;
 }
 
 h1 {
@@ -70,18 +58,30 @@ h3 {
     margin-top: 1rem;
 }
 
+.card {
+    height: 374px;
+    width: 90vw;
+    min-width: 326px;
+    max-width: 350px;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
 .profile-image {
-    width: 96px;
     position: absolute;
     border: 5px solid var(--white-clr);
     border-radius: 50%;
+    background-color: var(--white-clr);
 
     left: calc(50% - 96px/2);
-    top: calc(50% - 96px/2 - 47px);
+    top: calc(50% - 96px/2 - 5.5rem);
 }
 
-.card-image {
-    border-radius: var(--br) var(--br) 0 0;
+.card-image {    
+    border-radius: var(--br) var(--br) 0 0;    
 }
 
 .card-text {
@@ -90,8 +90,20 @@ h3 {
 }
 
 .personal-info {
-    margin-top: calc(96px/2);
+    margin-top: 4rem;
     padding: var(--p-m);
+}
+
+.person {
+    display: flex;
+    justify-content: center;    
+    margin-bottom: .8rem;
+}
+
+.person .age {
+    margin-left: .85rem;
+    color: var(--primary-clr-dark);
+    font-weight: var(--fw-r);
 }
 
 .separator {
